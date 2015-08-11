@@ -76,9 +76,9 @@ mv composer.phar /usr/local/bin/composer
 
 
 #Install and Configure LearningLocker
-cd /var/www
-git clone https://github.com/LearningLocker/learninglocker.git learninglocker
-cd learninglocker
+mkdir -p /var/www
+git clone https://github.com/LearningLocker/learninglocker.git /var/www/learninglocker
+cd /var/www/learninglocker
 composer install
 #Create a new MongoDB database:
 cat <<EOF | mongo
