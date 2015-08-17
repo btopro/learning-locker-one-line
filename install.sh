@@ -54,7 +54,7 @@ rpm -Uvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch
 rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
 
 #Install server dependencies
-yes | yum --enablerepo=remi,remi-php56 install -g -y bower git deltarpm httpd mongodb mongodb-server nodejs npm php php-common php-cli php-pear php-mysqlnd php-pecl-mongo php-gd php-mbstring php-mcrypt php-xml
+yes | yum --enablerepo=remi,remi-php56 install -y bower git deltarpm httpd mongodb mongodb-server nodejs npm php php-common php-cli php-pear php-mysqlnd php-pecl-mongo php-gd php-mbstring php-mcrypt php-xml
 #Update CentOS
 yes | yum update -y
 #Start the Firewall Daemon and enable automatic startup
